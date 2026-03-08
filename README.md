@@ -10,13 +10,7 @@ A simple and clean **Python desktop application** that converts **Feet to Meters
 * Fast and accurate conversion
 * Simple and user-friendly interface
 * Lightweight desktop application
-
----
-
-## 🖥️ Screenshot
-
-![App Screenshot](screenshot.png.png)
-
+   
 ---
 
 ## 🚀 How to Run
