@@ -1,30 +1,37 @@
 # 🔢 Unit Converter
 
-A simple and clean **Python desktop application** that converts **Feet to Meters** with a modern graphical interface.
+A simple desktop application built with **Python** that converts **Feet to Meters** using a clean graphical user interface.
 
 ---
 
 ## ✨ Features
 
-* Modern GUI built with Python
+* Simple and modern GUI
 * Fast and accurate conversion
-* Simple and user-friendly interface
 * Lightweight desktop application
-   
+* Easy to use
+
+---
+
+## ⬇️ Download
+
+You can download the application from here:
+
+[Download App](dist/app.exe)
+
 ---
 
 ## 🚀 How to Run
 
-1. Install Python
-2. Run the application
+Run the program using Python:
 
-```bash
+```id="4v66x7"
 python app.py
 ```
 
-Or run the compiled version:
+Or run the compiled version directly:
 
-```bash
+```id="f2j4cr"
 app.exe
 ```
 
@@ -37,7 +44,7 @@ app.exe
 
 ---
 
-## 👨‍💻 Author
+## 👨‍💻 Developer
 
 **Fares Hamed**
 
@@ -45,7 +52,7 @@ app.exe
 
 ## 📂 Project Structure
 
-```
+```id="mpux6j"
 unit-converter
 │
 ├── app.py
@@ -53,3 +60,9 @@ unit-converter
 ├── app.spec
 └── dist/app.exe
 ```
+
+---
+
+## ⭐ Support
+
+If you like this project, consider giving it a **star ⭐ on GitHub**.
