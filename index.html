@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Unit Converter</title>
+
+<style>
+body{
+font-family: Arial;
+background:#111;
+color:white;
+text-align:center;
+margin-top:100px;
+}
+
+input{
+padding:10px;
+font-size:20px;
+}
+
+button{
+padding:10px 20px;
+font-size:20px;
+margin-top:15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Feet to Meters Converter</h1>
+
+<input id="feet" placeholder="Enter feet">
+
+<br><br>
+
+<button onclick="convert()">Convert</button>
+
+<h2 id="result"></h2>
+
+<script>
+
+function convert(){
+
+let feet=document.getElementById("feet").value
+
+let meters=feet*0.3048
+
+document.getElementById("result").innerHTML=meters+" meters"
+
+}
+
+</script>
+
+</body>
+</html>
