@@ -2,7 +2,7 @@
 <html>
 
 <head>
-<title>Fares Converter</title>
+<title>Unit Converter</title>
 
 <style>
 
@@ -37,6 +37,14 @@ border:none;
 margin-bottom:15px;
 }
 
+select{
+width:100%;
+padding:12px;
+font-size:16px;
+border-radius:10px;
+margin-bottom:15px;
+}
+
 button{
 width:100%;
 padding:12px;
@@ -46,15 +54,20 @@ border-radius:10px;
 background:#3b82f6;
 color:white;
 cursor:pointer;
+margin-bottom:10px;
 }
 
 button:hover{
 background:#2563eb;
 }
 
+.clear{
+background:#ef4444;
+}
+
 .result{
-margin-top:20px;
-font-size:24px;
+margin-top:15px;
+font-size:22px;
 }
 
 .footer{
@@ -71,11 +84,22 @@ color:#94a3b8;
 
 <div class="box">
 
-<h1>Feet → Meters</h1>
+<h1>Unit Converter</h1>
 
-<input id="feet" placeholder="Enter feet">
+<input id="value" placeholder="Enter number">
+
+<select id="type">
+
+<option value="f2m">Feet → Meters</option>
+<option value="m2f">Meters → Feet</option>
+<option value="cm">Meters → CM</option>
+<option value="km">Meters → KM</option>
+
+</select>
 
 <button onclick="convert()">Convert</button>
+
+<button class="clear" onclick="clearBox()">Clear</button>
 
 <div class="result" id="result"></div>
 
@@ -89,11 +113,23 @@ Created by Fares Hamed
 
 function convert(){
 
-let feet=document.getElementById("feet").value
+let v=document.getElementById("value").value
+let t=document.getElementById("type").value
+let r=0
 
-let meters=feet*0.3048
+if(t=="f2m") r=v*0.3048
+if(t=="m2f") r=v*3.28084
+if(t=="cm") r=v*100
+if(t=="km") r=v/1000
 
-document.getElementById("result").innerHTML=meters.toFixed(2)+" meters"
+document.getElementById("result").innerHTML=r.toFixed(2)
+
+}
+
+function clearBox(){
+
+document.getElementById("value").value=""
+document.getElementById("result").innerHTML=""
 
 }
 
